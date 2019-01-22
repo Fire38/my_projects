@@ -1,0 +1,17 @@
+{% extends 'main_app/base.html' %}
+
+{% block 'title_block' %}
+	Главная
+{% endblock %}
+
+{% block 'header_block' %}
+	<h2>My projects</h2>
+{% endblock %}
+
+{% block 'body_block' %}
+	<ol>
+		{% for project in projects %}
+			<li><a href="#">{{ project }}</a></li>
+		{% endfor %}
+	</ol>
+{% endblock %}
